@@ -1,2 +1,0 @@
-# Python Interactive Curriculum Website
----
