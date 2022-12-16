@@ -1,3 +1,7 @@
+//"use client";
+
+//import { useEffect } from 'react';
+
 function FloatingBoard({ children }) {
     return (
         <div class="border-lighting">
@@ -8,17 +12,39 @@ function FloatingBoard({ children }) {
     )
 }
 
-function Lighting({ children }) {
+function Lighting() {
     return (
         <div class="lighting"></div>
     )
 }
 
+function MagicCard({ children }) {
+    return (
+        <div>
+            <Lighting />
+            <FloatingBoard>
+                {children}
+            </FloatingBoard>
+        </div>
+    )
+}
+
+function Neumorphic({ children }) {
+    return (
+        <div class="neumorphic">
+            {children}
+        </div>
+    )
+}
+
+
+
 export default function Dashboard({ children }) {
     return (
         <section>
-            <Lighting />
-            <FloatingBoard />
+            <MagicCard>
+                <Neumorphic>Hello</Neumorphic>
+            </MagicCard>
             {children}
         </section>
     )
