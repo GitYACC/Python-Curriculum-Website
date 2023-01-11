@@ -45,7 +45,20 @@ export default function Dashboard({ children }) {
                 {/* <Neumorphic name="fbtn2" width={100} left={10}>World!</Neumorphic> */}
             {/* </MagicCard> */}
             <div className="BaseGrid">
-                <div className="SideNav"></div>
+                <div className="SideNav">
+                    <h1>nav</h1><br></br>
+                    <h1>nav</h1><br></br>
+                    <h1>nav</h1><br></br>
+                    <h1>nav</h1><br></br>
+                    <h1>nav</h1><br></br>
+                    <h1>nav</h1><br></br>
+                    <h1>nav</h1><br></br>
+                    <h1>nav</h1><br></br>
+                    <h1>nav</h1><br></br>
+                    <h1>nav</h1><br></br>
+                    <h1>nav</h1><br></br>
+                    <h1>nav</h1><br></br>
+                </div>
                 <div className="Main"></div>
                 <div className="IdeaBoard"></div>
             </div>
