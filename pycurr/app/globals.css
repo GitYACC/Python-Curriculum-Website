@@ -1,8 +1,6 @@
 body {
   background: rgb(15, 23, 41);
   box-sizing: border-box;
-  padding-top: 2rem;
-  padding-left: 2rem;
 }
 
 @property --rotate {
@@ -117,4 +115,25 @@ body {
 
 .IdeaBoard {
   border: solid 2px black;
+}
+
+.gnav {
+  position: absolute;
+  display: flex;
+  background-color: #191c29;
+  font-family: SF Mono;
+  min-width: 100vw;
+  height: 10vh;
+  gap: 20px;
+  list-style-type: none;
+  padding: none;
+  margin: none;
+}
+
+.gnav > li > a {
+  color: aqua;
+}
+
+.gnav > li > a:hover {
+  color: red;
 }

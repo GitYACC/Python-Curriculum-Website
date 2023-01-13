@@ -36,6 +36,22 @@ function Neumorphic({
     )
 }
 
+function ClickLink({ href, children }) {
+    return (
+        <li><a href={href}>{children}</a></li>
+    )
+}
+
+function GlobalNav({ children }) {
+    return (
+        <ul className="gnav">
+            <ClickLink href="#">Docs</ClickLink>
+            <ClickLink>Examples</ClickLink>
+            <ClickLink>Frameworks</ClickLink>
+        </ul>
+    )
+}
+
 
 export default function Dashboard({ children }) {
     return (
@@ -44,24 +60,7 @@ export default function Dashboard({ children }) {
                 {/* <Neumorphic name="fbtn" width={300} left={50}>Hello</Neumorphic> */}
                 {/* <Neumorphic name="fbtn2" width={100} left={10}>World!</Neumorphic> */}
             {/* </MagicCard> */}
-            <div className="BaseGrid">
-                <div className="SideNav">
-                    <h1>nav</h1><br></br>
-                    <h1>nav</h1><br></br>
-                    <h1>nav</h1><br></br>
-                    <h1>nav</h1><br></br>
-                    <h1>nav</h1><br></br>
-                    <h1>nav</h1><br></br>
-                    <h1>nav</h1><br></br>
-                    <h1>nav</h1><br></br>
-                    <h1>nav</h1><br></br>
-                    <h1>nav</h1><br></br>
-                    <h1>nav</h1><br></br>
-                    <h1>nav</h1><br></br>
-                </div>
-                <div className="Main"></div>
-                <div className="IdeaBoard"></div>
-            </div>
+            <GlobalNav></GlobalNav>
             {children}
         </section>
     )
