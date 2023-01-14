@@ -10,7 +10,6 @@ function MagicCard({ children }) {
         </div>
     )
 }
-
 function Neumorphic({
     children,
     name,
@@ -44,11 +43,18 @@ function ClickLink({ href, children }) {
 
 function GlobalNav({ children }) {
     return (
-        <ul className="gnav">
-            <ClickLink href="#">Docs</ClickLink>
-            <ClickLink>Examples</ClickLink>
-            <ClickLink>Frameworks</ClickLink>
-        </ul>
+        <div style={{
+            "min-width": "100vw", 
+            "backgroundColor": "#0f1729", 
+            "borderBottom": "1px solid rgb(255, 255, 255, 0.1)",
+            "justifyContent": "center"
+        }}>
+            <ul className="gnav">
+                <ClickLink href="#">Docs</ClickLink>
+                <ClickLink>Examples</ClickLink>
+                <ClickLink>Frameworks</ClickLink>
+            </ul>
+        </div>
     )
 }
 
@@ -56,11 +62,7 @@ function GlobalNav({ children }) {
 export default function Dashboard({ children }) {
     return (
         <section>
-            {/* <MagicCard> */}
-                {/* <Neumorphic name="fbtn" width={300} left={50}>Hello</Neumorphic> */}
-                {/* <Neumorphic name="fbtn2" width={100} left={10}>World!</Neumorphic> */}
-            {/* </MagicCard> */}
-            <GlobalNav></GlobalNav>
+            <GlobalNav />
             {children}
         </section>
     )
